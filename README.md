@@ -279,7 +279,9 @@ save the file and now the test has been run on shared runner
 
 my job has been succeeded again - but this time it run on shared runner, not on fargate serverless
 
-![image](https://github.com/user-attachments/assets/ce8fd90a-b166-433b-b13b-9c60db4e8292)
+![image](https://github.com/user-attachments/assets/f0e9b771-fe56-4b09-8840-f6ed652f6602)
+
+
 
 
 
