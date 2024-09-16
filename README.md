@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/44daf7a1-96e6-4b90-b4fe-1fdb12672cef)
-
 # Gitlab Runner CI on AWS Fargate Serverless
 
 ## Create a project in Gitlab
