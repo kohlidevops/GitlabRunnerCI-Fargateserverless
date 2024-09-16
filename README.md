@@ -249,6 +249,37 @@ my gitlab job has been done
 
 ![image](https://github.com/user-attachments/assets/5c3ccb46-12ce-4968-9207-c27aae927908)
 
+## To run the gitlabci yaml file to Gitlab shared runner
+
+Go to your gitlab project > Settings > CICD > Runner > Expand > Instance Runner 
+
+![image](https://github.com/user-attachments/assets/461bd704-d8eb-44c4-ad68-4ceaed6b447c)
+
+Note the gitlab-org // which is shared runner
+
+Now open and edit the gitlabci yaml file and add like below content
+
+```
+stages:
+  - test
+
+test_job:
+  stage: test
+  tags:
+    - gitlab-org
+    #- fargate
+    #- custom
+    # - nodejs
+  script:
+    - echo "This job runs on the custom executor."
+    - echo "New update"
+``
+
+save the file and now the test has been run on shared runner
+
+my job has been succeeded again - but this time it run on shared runner, not on fargate serverless
+
+![image](https://github.com/user-attachments/assets/ce8fd90a-b166-433b-b13b-9c60db4e8292)
 
 
 
